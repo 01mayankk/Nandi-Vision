@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+
+# ML / preprocessing
+numpy
+pillow
+albumentations
+scikit-learn
+tqdm
+torch
+
+# ONNX (CPU)
+onnxruntime
+
+# File upload support
+python-multipart
+scipy
