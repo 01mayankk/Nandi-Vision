@@ -30,23 +30,23 @@ NandiVision is an AI-driven system designed to classify Indian cow and buffalo b
 ## 🐄 Supported Breeds
 
 ### Cow Breeds (8)
-- Alambadi
-- Amritmahal
-- Banni
-- Bargur
 - Deoni
-- Kasargod
-- Kangayam
-- Nagori
+- Rathi
+- Red Sindhi
+- Sahiwal
+- Tharparkar
+- Gir
+- Hariana
+- Kankrej
 
 ### Buffalo Breeds (7)
-- Bhadawari
+- Banni
 - Jaffrabadi
 - Mehsana
 - Murrah
 - Nagpuri
 - Nili Ravi
-- Surti
+- Toda
 
 ---
 
