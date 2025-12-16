@@ -1,15 +1,13 @@
-# main.py
-# Main FastAPI application for NandiVision Backend.
+# backend/api/main.py
 
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
-
-# Stage-1 = ONNX, Stage-2 = ONNX
-from .stage1_predict_onnx import predict_stage1_onnx as predict_stage1
-from .stage2_breed_predict_onnx import predict_breed_onnx
-
-import io
 from fastapi.datastructures import UploadFile as UP
+import io
+
+# ONNX inference
+from api.stage1_predict_onnx import predict_stage1_onnx
+from api.stage2_breed_predict_onnx import predict_breed_onnx
 
 app = FastAPI(
     title="NandiVision Backend API",
@@ -17,7 +15,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS for frontend
+# CORS (Vercel + browser safe)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -35,10 +33,10 @@ async def classify(file: UploadFile = File(...)):
 
     bytes_data = await file.read()
 
+    # Stage 1: Cow / Buffalo / None
     stage1_file = UP(filename=file.filename, file=io.BytesIO(bytes_data))
-    stage1 = await predict_stage1(stage1_file)
+    stage1 = await predict_stage1_onnx(stage1_file)
 
-    # 🚫 Not cattle
     if stage1["class"] == "none":
         return {
             "type": "none",
@@ -46,12 +44,12 @@ async def classify(file: UploadFile = File(...)):
             "message": "The uploaded image is not of cattle."
         }
 
-    # ✅ Cow or Buffalo → Stage 2
+    # Stage 2: Breed classification
     stage2_file = UP(filename=file.filename, file=io.BytesIO(bytes_data))
     breed = await predict_breed_onnx(stage2_file)
 
     return {
-        "type": stage1["class"],             # cow / buffalo
+        "type": stage1["class"],
         "type_confidence": stage1["confidence"],
         "breed": breed["breed"],
         "breed_confidence": breed["confidence"]

@@ -84,7 +84,7 @@ export default function HomePage() {
       const formData = new FormData();
       formData.append("file", image);
 
-      const res = await fetch("http://localhost:8000/classify", {
+      const res = await fetch("https://01mayankk-nandi-vision-backend.hf.space/classify", {
         method: "POST",
         body: formData,
       });
