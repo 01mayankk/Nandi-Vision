@@ -1,0 +1,122 @@
+{
+  "banni": {
+    "name": "Banni",
+    "milk_production": "8–12 litres per day",
+    "origin": "Kutch region, Gujarat, India",
+    "horn_type": "Short to medium, slightly curved",
+    "body_features": "Large frame, black or brown coat, strong legs",
+    "best_food": "Natural grasslands, green fodder, dry hay"
+  },
+  "deoni": {
+    "name": "Deoni",
+    "milk_production": "6–10 litres per day",
+    "origin": "Maharashtra & Telangana, India",
+    "horn_type": "Medium, outward and upward curved",
+    "body_features": "White body with black spots, strong hump",
+    "best_food": "Green fodder, jowar straw, oil cakes"
+  },
+  "gir": {
+    "name": "Gir",
+    "milk_production": "10–15 litres per day",
+    "origin": "Gujarat, India",
+    "horn_type": "Long, thick, curved backward",
+    "body_features": "Red coat with white patches, loose skin, prominent hump",
+    "best_food": "Green fodder, cotton seed cake, mineral mixture"
+  },
+  "hariana": {
+    "name": "Hariana",
+    "milk_production": "6–8 litres per day",
+    "origin": "Haryana & Western Uttar Pradesh, India",
+    "horn_type": "Short and curved",
+    "body_features": "White or light grey coat, medium build",
+    "best_food": "Green fodder, wheat straw, oil cakes"
+  },
+  "jaffrabadi": {
+    "name": "Jaffrabadi",
+    "milk_production": "8–12 litres per day",
+    "origin": "Gujarat, India",
+    "horn_type": "Massive, heavy, curved downward",
+    "body_features": "Very large body, black coat, powerful frame",
+    "best_food": "Green fodder, maize silage, mineral supplements"
+  },
+  "kankrej": {
+    "name": "Kankrej",
+    "milk_production": "8–10 litres per day",
+    "origin": "Gujarat & Rajasthan, India",
+    "horn_type": "Lyre-shaped, thick horns",
+    "body_features": "Silver-grey coat, muscular body, strong legs",
+    "best_food": "Dry fodder, green grass, oil cakes"
+  },
+  "mehsana": {
+    "name": "Mehsana",
+    "milk_production": "10–14 litres per day",
+    "origin": "Mehsana district, Gujarat, India",
+    "horn_type": "Medium, curved horns",
+    "body_features": "Black body, medium-large frame",
+    "best_food": "Green fodder, cotton seed cake, silage"
+  },
+  "murrah": {
+    "name": "Murrah",
+    "milk_production": "12–18 litres per day",
+    "origin": "Haryana & Punjab, India",
+    "horn_type": "Short, tightly curled",
+    "body_features": "Jet black coat, heavy body, compact structure",
+    "best_food": "Green fodder, maize, mineral-rich feed"
+  },
+  "nagpuri": {
+    "name": "Nagpuri",
+    "milk_production": "5–7 litres per day",
+    "origin": "Vidarbha region, Maharashtra, India",
+    "horn_type": "Long, straight, pointed",
+    "body_features": "White coat with black markings, lean body",
+    "best_food": "Dry fodder, pasture grass, oil cakes"
+  },
+  "nili_ravi": {
+    "name": "Nili Ravi",
+    "milk_production": "10–15 litres per day",
+    "origin": "Punjab region (India & Pakistan)",
+    "horn_type": "Small, curved horns",
+    "body_features": "Black coat with white markings, heavy frame",
+    "best_food": "Green fodder, maize silage, protein feed"
+  },
+  "rathi": {
+    "name": "Rathi",
+    "milk_production": "7–10 litres per day",
+    "origin": "Rajasthan, India",
+    "horn_type": "Medium, curved outward",
+    "body_features": "Brown coat with white patches, medium frame",
+    "best_food": "Dry fodder, green grass, oil cakes"
+  },
+  "red_sindhi": {
+    "name": "Red Sindhi",
+    "milk_production": "6–10 litres per day",
+    "origin": "Sindh region",
+    "horn_type": "Medium sized horns",
+    "body_features": "Deep red coat, compact and hardy body",
+    "best_food": "Green fodder, rice bran, oil cakes"
+  },
+  "sahiwal": {
+    "name": "Sahiwal",
+    "milk_production": "8–12 litres per day",
+    "origin": "Punjab region (India & Pakistan)",
+    "horn_type": "Short and stumpy",
+    "body_features": "Reddish-brown coat, heat tolerant body",
+    "best_food": "Dry fodder, maize, oil cakes"
+  },
+  "tharparkar": {
+    "name": "Tharparkar",
+    "milk_production": "8–10 litres per day",
+    "origin": "Thar Desert, Rajasthan, India",
+    "horn_type": "Medium, curved horns",
+    "body_features": "White to grey coat, sturdy desert-adapted body",
+    "best_food": "Dry fodder, pasture grass, mineral supplements"
+  },
+  "toda": {
+    "name": "Toda",
+    "milk_production": "4–6 litres per day",
+    "origin": "Nilgiri Hills, Tamil Nadu, India",
+    "horn_type": "Large, crescent-shaped horns",
+    "body_features": "Dark brown coat, compact mountain-adapted body",
+    "best_food": "Natural pasture grass, green fodder"
+  }
+}

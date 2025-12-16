@@ -1,84 +1,86 @@
-# ==========================
-# NODE / NEXT.JS
-# ==========================
+# =========================
+# Dependencies
+# =========================
 node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# =========================
+# Testing / Coverage
+# =========================
+coverage/
+
+# =========================
+# Next.js
+# =========================
 .next/
 out/
-dist/
+
+# =========================
+# Production Builds
+# =========================
 build/
+dist/
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Vercel
+# =========================
+.vercel/
+
+# =========================
+# Logs
+# =========================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# ==========================
-# PYTHON / FASTAPI
-# ==========================
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+.vscode/
+.idea/
+
+# =========================
+# Python / ML junk
+# =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .venv/
 venv/
-env/
-ENV/
 
-# ==========================
-# ENVIRONMENT FILES
-# ==========================
-.env
-.env.local
-.env.development
-.env.production
-.env.test
-*.env
-
-# ==========================
-# SUPABASE SETTINGS
-# ==========================
-# (Never upload your Supabase keys)
-supabase/.temp/
-supabase/.branches/
-
-# ==========================
-# OS / EDITOR FILES
-# ==========================
-.DS_Store
-.vscode/
-*.swp
-*.swo
-
-# ==========================
-# GIT IGNORE — DATASET
-# ==========================
-# Your dataset folder should NOT be uploaded to GitHub.
-dataset/
-data/
-images/
-training_data/
-raw_images/
-processed_images/
-*/dataset/
+# =========================
+# DATA RULE (IMPORTANT)
+# =========================
+# Ignore all data folders by default (datasets, training, dumps)
 */data/
-*/images/
 
-# If dataset exists under backend:
-backend/dataset/
-backend/data/
-backend/images/
+# BUT allow frontend static data (used in UI)
+!frontend/data/
+!frontend/data/**
+!frontend/data/*.json
 
-# ==========================
-# MODELS (OPTIONAL)
-# ==========================
-# If you export trained .pt/.onnx models, ignore them
-*.pt
-*.onnx
-*.h5
+# =========================
+# HuggingFace / Large models
+# =========================
 *.pth
+*.pt
+*.ckpt
 
-# ==========================
-# LOGS / TEMP FILES
-# ==========================
-*.log
-logs/
-temp/
-tmp/
+# ONNX handled via Git LFS (allowed)
+!*.onnx
